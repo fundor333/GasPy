@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # External project
     "guardian",
+    'rolepermissions',
     "django_filters",
     # Custom models
     "anagrafic.apps.AnagraficConfig",
@@ -123,3 +124,7 @@ AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",  # default
     "guardian.backends.ObjectPermissionBackend",
 )
+
+# Roles
+
+ROLEPERMISSIONS_MODULE = 'gaspy.roles'

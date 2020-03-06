@@ -110,6 +110,14 @@ argon2 = ["argon2-cffi (>=16.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+category = "dev"
+description = "A Django test runner based on unittest2's test discovery."
+name = "django-discover-runner"
+optional = false
+python-versions = "*"
+version = "1.0"
+
+[[package]]
 category = "main"
 description = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
 name = "django-filter"
@@ -130,6 +138,19 @@ version = "2.2.0"
 
 [package.dependencies]
 Django = ">=2.1"
+
+[[package]]
+category = "dev"
+description = "A django app for role based permissions."
+name = "django-role-permissions"
+optional = false
+python-versions = "*"
+version = "2.2.1"
+
+[package.dependencies]
+Django = ">=1.5"
+django-discover-runner = "*"
+six = "*"
 
 [[package]]
 category = "main"
@@ -347,7 +368,7 @@ python-versions = "*"
 version = "1.11.2"
 
 [metadata]
-content-hash = "032193fdd55ee801409f6e32a99e8725dbee87466c2edb3274de67d5b367b497"
+content-hash = "eaa9e547999f21af7a2981ba7d5d6472cee7e159664936829ccc6c4c98737935"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -386,6 +407,10 @@ django = [
     {file = "Django-3.0.4-py3-none-any.whl", hash = "sha256:89e451bfbb815280b137e33e454ddd56481fdaa6334054e6e031041ee1eda360"},
     {file = "Django-3.0.4.tar.gz", hash = "sha256:50b781f6cbeb98f673aa76ed8e572a019a45e52bdd4ad09001072dfd91ab07c8"},
 ]
+django-discover-runner = [
+    {file = "django-discover-runner-1.0.tar.gz", hash = "sha256:0ba91fe722c256bcbfdeb36fac7eac0f27e5bfda55d98c4c1cf9ab62b5b084fe"},
+    {file = "django_discover_runner-1.0-py2.py3-none-any.whl", hash = "sha256:e05b6da06310ecc857b8950007f45b8968dd5f0b8b718a1095cf466c705fd807"},
+]
 django-filter = [
     {file = "django-filter-2.2.0.tar.gz", hash = "sha256:c3deb57f0dd7ff94d7dce52a047516822013e2b441bed472b722a317658cfd14"},
     {file = "django_filter-2.2.0-py3-none-any.whl", hash = "sha256:558c727bce3ffa89c4a7a0b13bc8976745d63e5fd576b3a9a851650ef11c401b"},
@@ -393,6 +418,9 @@ django-filter = [
 django-guardian = [
     {file = "django-guardian-2.2.0.tar.gz", hash = "sha256:8cacf49ebcc1e545f0a8997971eec0fe109f5ed31fc2a569a7bf5615453696e2"},
     {file = "django_guardian-2.2.0-py3-none-any.whl", hash = "sha256:ac81e88372fdf1795d84ba065550e739b42e9c6d07cdf201cf5bbf9efa7f396c"},
+]
+django-role-permissions = [
+    {file = "django-role-permissions-2.2.1.tar.gz", hash = "sha256:c00fc15f67e63cbf5514b95caeb369d6094fe94d75b14c3afc1bb4963babd1fc"},
 ]
 et-xmlfile = [
     {file = "et_xmlfile-1.0.1.tar.gz", hash = "sha256:614d9722d572f6246302c4491846d2c393c199cfa4edc9af593437691683335b"},
