@@ -7,3 +7,6 @@ class SubGroup(models.Model):
 
     def __str__(self):
         return f"{self.gas.name} - {self.name}"
+
+    class Meta:
+        unique_together =("name", "gas")
