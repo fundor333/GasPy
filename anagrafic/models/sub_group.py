@@ -9,4 +9,4 @@ class SubGroup(models.Model):
         return f"{self.gas.name} - {self.name}"
 
     class Meta:
-        unique_together =("name", "gas")
+        unique_together = ("name", "gas")
