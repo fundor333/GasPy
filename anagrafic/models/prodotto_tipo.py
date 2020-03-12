@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ProdottoType(models.Model):
-    name = models.ForeignKey(max_length=200)
+    name = models.CharField(max_length=200)
     gas = models.ForeignKey("Gas", on_delete=models.CASCADE)
 
     def __str__(self):
